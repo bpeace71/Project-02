@@ -16,7 +16,7 @@
 + App will output mortgage affordability, bill payment plans, and savings plans
 
 #### Assignment
-This application is a group project for [GA Tech's Coding Boot Camp](https://codingbootcamp.pe.gatech.edu/), Full-Time Fall 2017 Cohort. Collaborators include: [Brian Peace](https://www.github.com/bpeace71), [Corey Sullivan](https://www.github.com/co-su), Scott Hunter, and [Keli Chau](https://www.github.com/kelichau).
+This application is a group project for [GA Tech's Coding Boot Camp](https://codingbootcamp.pe.gatech.edu/), Full-Time Fall 2017 Cohort. Collaborators include: [Brian Peace](https://www.github.com/bpeace71), [Corey Sullivan](https://www.github.com/co-su), [Scott Hunter](https://www.github.com/scotthhunter), and [Keli Chau](https://www.github.com/kelichau).
 
 ##### Requirements
 + Node.js
