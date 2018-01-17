@@ -3,17 +3,15 @@
 ## Overview
 
 ### Project Ideas
-1. Untitled Story Game
-+ Different paths for each story based on player's choices
-+ Choices will have associated points that will generate paths
-
-2. Untitled Health Application
+Untitled Health Application
 + Users can input their current weight and based on user's weight, an exercise plan will be provided
 + An estimated timeline will be given to user of how much weight will be lost based on calorie inputs
++ YouTube API to show users related demo videos
++ Users are able to access to their individual database (Facebook, Twitter, Google Plus options)
 
-3. Untitled Financial Calculator Application
-+ Users can input their salary and expenses 
-+ App will output mortgage affordability, bill payment plans, and savings plans
+#### Teams
+Backend: [Corey Sullivan](https://www.github.com/co-su) and [Scott Hunter](https://www.github.com/scotthhunter)
+Frontend: [Brian Peace](https://www.github.com/bpeace71) and [Keli Chau](https://www.github.com/kelichau)
 
 #### Assignment
 This application is a group project for [GA Tech's Coding Boot Camp](https://codingbootcamp.pe.gatech.edu/), Full-Time Fall 2017 Cohort. Collaborators include: [Brian Peace](https://www.github.com/bpeace71), [Corey Sullivan](https://www.github.com/co-su), [Scott Hunter](https://www.github.com/scotthhunter), and [Keli Chau](https://www.github.com/kelichau).
