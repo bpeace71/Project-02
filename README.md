@@ -49,9 +49,9 @@ This application is a group project for [GA Tech's Coding Boot Camp](https://cod
 
 3. User can view video example of each exercise in suggested routine
 4. User can see a timeline for their goal based on max and min exercise input
-5. User can access a menu option paged called "Tracking your progress " with a time stamp of the weight inputs history
+5. User can access a menu option called "Tracking your progress " with a time stamp of the weight inputs history
 6. User can clear previous individual weight 
-7. User can compare their goal weight current weight at the top of the app
+7. User can compare their goal weight and current weight at the top of the app
 
 ### Visuals
 
