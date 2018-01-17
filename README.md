@@ -7,7 +7,7 @@ Untitled Health Application
 + Users can input their current weight and based on user's weight, an exercise plan will be provided
 + An estimated timeline will be given to user of how much weight will be lost based on calorie inputs
 + YouTube API to show users related demo videos
-+ Users are able to access to their individual database (Facebook, Twitter, Google Plus options)
++ Users are able to access to their individual database (Facebook, Twitter, Google Plus login options)
 
 #### Teams
 + **Backend**: [Corey Sullivan](https://www.github.com/co-su) and [Scott Hunter](https://www.github.com/scotthhunter)
