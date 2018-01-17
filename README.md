@@ -10,11 +10,13 @@ Untitled Health Application
 + Users are able to access to their individual database (Facebook, Twitter, Google Plus options)
 
 #### Teams
-Backend: [Corey Sullivan](https://www.github.com/co-su) and [Scott Hunter](https://www.github.com/scotthhunter)
-Frontend: [Brian Peace](https://www.github.com/bpeace71) and [Keli Chau](https://www.github.com/kelichau)
++ **Backend**: [Corey Sullivan](https://www.github.com/co-su) and [Scott Hunter](https://www.github.com/scotthhunter)
++ **Frontend**: [Brian Peace](https://www.github.com/bpeace71) and [Keli Chau](https://www.github.com/kelichau)
 
 #### Assignment
 This application is a group project for [GA Tech's Coding Boot Camp](https://codingbootcamp.pe.gatech.edu/), Full-Time Fall 2017 Cohort. Collaborators include: [Brian Peace](https://www.github.com/bpeace71), [Corey Sullivan](https://www.github.com/co-su), [Scott Hunter](https://www.github.com/scotthhunter), and [Keli Chau](https://www.github.com/kelichau).
+
+#### Goals
 
 ##### Requirements
 + Node.js
