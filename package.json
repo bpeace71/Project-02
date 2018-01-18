@@ -19,6 +19,7 @@
   "homepage": "https://github.com/bpeace71/Project-02#readme",
   "dependencies": {
     "express": "^4.16.2",
+    "inquirer": "^5.0.0",
     "mysql": "^2.15.0"
   }
 }

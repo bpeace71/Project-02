@@ -1,0 +1,1 @@
+INSERT INTO grannysmith1234 (username, userpass, user_age, starting_height_imp, starting_height_met, starting_weight_imp, starting_weight_met, starting_BMI, week_1_weight_imp, week_1_weight_met) VALUES ("grannysmith1234", "password", 73, 4.8, 1.46304, 90, 40.8233, 18.5, 90, 40.8233);
