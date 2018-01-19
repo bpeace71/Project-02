@@ -17,7 +17,7 @@ var goalweight = sequelize.define("goalweight", {
    {
   timestamps: false
 });
-
+ 
 // Syncs with DB
 goalweight.sync();
 

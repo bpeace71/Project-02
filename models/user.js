@@ -17,7 +17,7 @@ var User = sequelize.define("user", {
   Height: {
     type: Sequelize.INTEGER
   },
-  ????: {
+  ?????: {
     type: Sequelize.INTEGER
   }
 }, {
