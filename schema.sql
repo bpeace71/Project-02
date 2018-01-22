@@ -1,3 +1,5 @@
+DROP DATABASE tortoise_db;
+
 CREATE DATABASE tortoise_DB;
 
 USE tortoise_DB;
