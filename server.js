@@ -7,7 +7,9 @@ var env = require('dotenv').load()
 var exphbs = require('express-handlebars')
 var mysql = require("mysql");
 var inquirer = require("inquirer");
+var sequelize = require("sequelize");
 
+var PORT = process.env.PORT || 5000;
 // var connection = mysql.createConnection({
 //   host: "localhost",
 //   port: 3306,
@@ -66,16 +68,11 @@ require('./config/passport/passport.js')(passport, models.user);
 //Sync Database
 models.sequelize.sync().then(function() {
     console.log("Database synced!")
+    app.listen(PORT, function(err) {
+        if (!err) console.log("Connected! Site is live.");
+        else console.log(err)
+    });
  
 }).catch(function(err) {
     console.log(err, "Something went wrong with the Database Update!")
-		});
-
-
- 
- 
-app.listen(5000, function(err) {
-    if (!err)
-        console.log("Connected! Site is live.");
-    else console.log(err)
 });

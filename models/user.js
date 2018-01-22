@@ -1,92 +1,92 @@
-module.exports = function(sequelize, Sequelize) {
+module.exports = function(sequelize, DataTypes) {
  
     var User = sequelize.define('user', {
  
         id: {
             autoIncrement: true,
             primaryKey: true,
-            type: Sequelize.INTEGER
+            type: DataTypes.INTEGER
         },
  
         firstname: {
-            type: Sequelize.STRING,
+            type: DataTypes.STRING,
             notEmpty: true
         },
  
         lastname: {
-            type: Sequelize.STRING,
+            type: DataTypes.STRING,
             notEmpty: true
         },
  
         username: {
-            type: Sequelize.STRING,
+            type: DataTypes.STRING,
             notEmpty: true
         },
  
         address1: {
-            type: Sequelize.STRING,
+            type: DataTypes.STRING,
         },
  
         address2: {
-            type: Sequelize.STRING,
+            type: DataTypes.STRING,
         },
  
         city: {
-            type: Sequelize.STRING,
+            type: DataTypes.STRING,
             notEmpty: true
         },
  
         state: {
-            type: Sequelize.STRING,
+            type: DataTypes.STRING,
             notEmpty: true
         },
  
         phone: {
-            type: Sequelize.STRING,
+            type: DataTypes.STRING,
         },
  
         gender: {
-            type: Sequelize.STRING,
+            type: DataTypes.STRING,
             notEmpty: true
         },
  
         height: {
-            type: Sequelize.STRING,
+            type: DataTypes.STRING,
             notEmpty: true
         },
  
         initialWeight: {
-            type: Sequelize.STRING,
+            type: DataTypes.STRING,
             notEmpty: true
         },
  
         bodyType: {
-            type: Sequelize.STRING,
+            type: DataTypes.STRING,
             notEmpty: true
         },
 
         about: {
-            type: Sequelize.TEXT
+            type: DataTypes.TEXT
         },
  
         email: {
-            type: Sequelize.STRING,
+            type: DataTypes.STRING,
             validate: {
                 isEmail: true
             }
         },
  
         password: {
-            type: Sequelize.STRING,
+            type: DataTypes.STRING,
             allowNull: false
         },
  
         last_login: {
-            type: Sequelize.DATE
+            type: DataTypes.DATE
         },
  
         status: {
-            type: Sequelize.ENUM('active', 'inactive'),
+            type: DataTypes.ENUM('active', 'inactive'),
             defaultValue: 'active'
         }
  

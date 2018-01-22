@@ -4,7 +4,7 @@ CREATE DATABASE tortoise_DB;
 
 USE tortoise_DB;
 
-CREATE TABLE grannysmith1234(
+CREATE TABLE routinessss(
   id INT NOT NULL AUTO_INCREMENT,
   username VARCHAR(100) NOT NULL,
   userpass VARCHAR(45) NOT NULL,
@@ -18,3 +18,13 @@ CREATE TABLE grannysmith1234(
   week_1_weight_met INT default 0,
   PRIMARY KEY (id)
 );
+
+CREATE TABLE routines(
+  id INT NOT NULL AUTO_INCREMENT,
+  routineText TEXT (25000) NOT NULL,
+  routineID INT default 0,
+  PRIMARY KEY (id)
+
+);
+
+INSERT INTO routines (routineText)

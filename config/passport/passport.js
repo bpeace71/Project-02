@@ -1,10 +1,12 @@
 var bCrypt = require('bcrypt-nodejs');
- 
+var routines = require("../../models/routines.js")
 module.exports = function(passport, user) {
 
 
     var User = user;
     var LocalStrategy = require('passport-local').Strategy;
+
+    var db = require("../../models/");
 
     //serialize
 	passport.serializeUser(function(user, done) {
@@ -68,15 +70,7 @@ module.exports = function(passport, user) {
                         if (!newUser) {
                             return done(null, false);
                         } else {
-                            routines.findAll({
-                                where: {
-                                id: req.body.initialWeight
-                                    }
-                                }).then(function(results) {
-                                    res.json(results);
-                                    console.log(results);
-                                });
-                            // return done(null, newUser);
+                            return done( null, newUser );
                         }
                     });
                 }
@@ -86,6 +80,8 @@ module.exports = function(passport, user) {
 
     //serialize
 	passport.serializeUser(function(user, done) {
+
+        console.log( user, done );
  
     done(null, user.id);
  
