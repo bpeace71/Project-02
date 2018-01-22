@@ -8,12 +8,18 @@
 </head>
 
 <body>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12">
-                <img alt="TortoiseFit" src="images/image.png" style="width: 250px; height: 86px" />
-            </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <img alt="TortoiseFit" src="images/image.png" style="width: 250px; height: 86px" />
         </div>
+        <p><strong><center>
+            <div id="quoteDisplay">
+
+            </div>
+            <body onLoad="newQuote()">
+            </center></strong></p>
+    	</div>
+	</div>
 
         <div class="container">
 <div class="col-md-5">
@@ -34,8 +40,8 @@
 						<input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
 					</div>
                     <div class="form-group">
-                    <textarea class="form-control" type="textarea" id="message" placeholder="Message" maxlength="140" rows="7"></textarea>
-                        <span class="help-block"><p id="characterLeft" class="help-block ">You have reached the limit</p></span>                    
+                    <textarea class="form-control" type="textarea" id="message" placeholder="Message" maxlength="280" rows="7"></textarea>
+                                            
                     </div>
             
         <button type="submit" id="submit" name="submit" class="btn btn-primary pull-right">Submit Form</button>
@@ -45,4 +51,5 @@
 </div>
 
     </div>
+    <script src="../assets/js/quote.js"></script>
 </body>
