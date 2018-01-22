@@ -19,9 +19,52 @@ module.exports = function(sequelize, Sequelize) {
         },
  
         username: {
-            type: Sequelize.TEXT
+            type: Sequelize.STRING,
+            notEmpty: true
         },
  
+        address1: {
+            type: Sequelize.STRING,
+        },
+ 
+        address2: {
+            type: Sequelize.STRING,
+        },
+ 
+        city: {
+            type: Sequelize.STRING,
+            notEmpty: true
+        },
+ 
+        state: {
+            type: Sequelize.STRING,
+            notEmpty: true
+        },
+ 
+        phone: {
+            type: Sequelize.STRING,
+        },
+ 
+        gender: {
+            type: Sequelize.STRING,
+            notEmpty: true
+        },
+ 
+        height: {
+            type: Sequelize.STRING,
+            notEmpty: true
+        },
+ 
+        initialWeight: {
+            type: Sequelize.STRING,
+            notEmpty: true
+        },
+ 
+        bodyType: {
+            type: Sequelize.STRING,
+            notEmpty: true
+        },
+
         about: {
             type: Sequelize.TEXT
         },

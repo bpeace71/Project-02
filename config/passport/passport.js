@@ -48,17 +48,35 @@ module.exports = function(passport, user) {
                     var userPassword = generateHash(password);
                     var data =
                         {
-                            email: email,
-                            password: userPassword,
+
                             firstname: req.body.firstname,
-                            lastname: req.body.lastname
+                            lastname: req.body.lastname,
+                            username: req.body.username,
+                            password: userPassword,
+                            email: email,
+                            address1: req.body.address1,
+                            address2: req.body.address2,
+                            city: req.body.city,
+                            state: req.body.state,
+                            phone: req.body.phone,
+                            gender: req.body.gender,
+                            height: req.body.height,
+                            initialWeight: req.body.initialWeight,
+                            bodyType: req.body.bodyType,
                         };
                     User.create(data).then(function(newUser, created) {
                         if (!newUser) {
                             return done(null, false);
-                        }
-                        if (newUser) {
-                            return done(null, newUser);
+                        } else {
+                            routines.findAll({
+                                where: {
+                                id: req.body.initialWeight
+                                    }
+                                }).then(function(results) {
+                                    res.json(results);
+                                    console.log(results);
+                                });
+                            // return done(null, newUser);
                         }
                     });
                 }

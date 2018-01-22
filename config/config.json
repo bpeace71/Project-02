@@ -6,7 +6,7 @@
  
         "password": "csulli0892",
  
-        "database": "sequelize_passport",
+        "database": "tortoise_db",
  
         "host": "127.0.0.1",
  
