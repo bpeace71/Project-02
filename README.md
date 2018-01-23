@@ -3,7 +3,7 @@
 ## Overview
 
 ### Project Ideas
-Untitled Health Application
+TortoiseFit Health Application
 + Users can input their current weight and based on user's weight, an exercise plan will be provided
 + An estimated timeline will be given to user of how much weight will be lost based on calorie inputs
 + YouTube API to show users related demo videos
@@ -15,8 +15,6 @@ Untitled Health Application
 
 #### Assignment
 This application is a group project for [GA Tech's Coding Boot Camp](https://codingbootcamp.pe.gatech.edu/), Full-Time Fall 2017 Cohort. Collaborators include: [Brian Peace](https://www.github.com/bpeace71), [Corey Sullivan](https://www.github.com/co-su), [Scott Hunter](https://www.github.com/scotthhunter), and [Keli Chau](https://www.github.com/kelichau).
-
-#### Goals
 
 ##### Requirements
 + Node.js
@@ -56,5 +54,24 @@ This application is a group project for [GA Tech's Coding Boot Camp](https://cod
 ### Visuals
 
 ## Acknowledgments
++ Node
++ Express
++ Passport
++ Express-Session
++ Dotenv
++ Express-Handlebars
++ MySQL
++ Sequelize
++ Pikabu
++ Bootstrap
++ Google Fonts
++ Google Analytics
 
 ## Future Plans
++ Add account settings
++ Enable email or username login options
++ Incorporate nearest gyms
++ Incorporate nearby fitness instructors
++ Incorporate nearby fitness events (I.E. marathons)
++ Link all pages
++ Expandable FAQ page 
