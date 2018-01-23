@@ -3,12 +3,89 @@
  
 <head>
     <title>Passport with Sequelize</title>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
 </head>
  
 <body>
     <h2>Dashboard</h2>
     <h5>Hurray! you are logged in.</h5>
- 
+    <h1 id="userHandle">Welcome, {{ user.firstname }}</h1>
+    <h2 id="initialWeight">{{ user.initialWeight }}</h2>
+    
+    <form id="signin" name="signin" method="post" action="signin">
+
+ 	<script>
+
+// type="text/javascript" src="../routes/userToRoutinesBridge.js"
+
+
+ 		console.log('user', user);
+ 		let firstname = $('#userHandle').text();
+ 		console.log('firstname', firstname);
+
+ 		let goalWeight = $('#initialWeight').text();
+ 		console.log('goalWeight', goalWeight);
+
+ 		///////////////////////////////////
+
+// readRoutines();
+// function readRoutines() {
+
+// app.get("/api/:goalweight",
+//    function(req, res) {
+//     console.log("this is what we wanted", req.params.initialWeight);
+//     if (req.params.intitalWeight) {
+//       Routine.findAll({
+//         where: {
+//           routineID: req.params.intitalWeight
+//         }
+//       }).then(function(results) {
+//         res.json(results);
+//       });
+//     }
+//   });
+
+// };
+
+
+
+ 	// 	readRoutines();
+
+		// function readRoutines() {
+		// var express = require("express")
+		// var connection = require("../server.js")
+
+		// console.log("whatever, man.")
+		//   connection.query("SELECT " + goalWeight + " FROM routine.routineID", function(err, res) {
+		//     if (err) throw err;
+		//     // Log all results of the SELECT statement
+		//     console.log(res);
+		//   });
+		// }
+
+		//////////////////////////////////////
+
+ 		//$.get('/routines/' + user.initialWeight, function(res) {
+
+ 		//});
+
+ 	$("#roulette").on("click", function(event) {
+		event.preventDefault();
+		var rountineidhere = goalweight;
+		$.get("/api/" + goalweight, function(data) {
+			console.log(data);
+   			renderDashboard(data);
+
+ 			});
+		});
+ 	</script>
+
+    <input class="btn" type="submit" id="roulette" />
+    </form>
+	<script src="js/getroutines.js" type="text/javascript"></script>
 </body>
  
 </html>

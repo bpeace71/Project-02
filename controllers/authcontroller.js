@@ -9,7 +9,10 @@ exports.signin = function(req, res) {
 }
 
 exports.dashboard = function(req, res) {
-    res.render('dashboard'); 
+	// get currently logged in user's initialWeight
+	// get routines corresponding to initialWeight
+	console.log('req.user', req.user);
+    res.render('dashboard');
 }
 
 exports.logout = function(req, res) {
