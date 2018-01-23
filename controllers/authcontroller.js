@@ -12,6 +12,7 @@ exports.dashboard = function(req, res) {
 	// get currently logged in user's initialWeight
 	// get routines corresponding to initialWeight
 	console.log('req.user', req.user);
+	res.locals.user = user;
     res.render('dashboard');
 }
 
